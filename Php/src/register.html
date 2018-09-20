@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- FAVICON -->
+		<link rel="shortcut icon" href="favicon.png" /> 
+		
+		<!-- TITLE -->
+		<title>Horizon15 - Registration</title>
+		
+		<!-- DESCRIPTION -->
+		<meta name="author" content="rcni" />
+		<meta name="description" content="Horizon15 bigest culfest in india organised by rotaract club of nirma institutes" />
+		<meta name="keywords"  content="dance, concert, events, pronites, rcni,coming soon,horizon15,horizon14, horizon,nirma university,rotaract,rotary,festival,fest,culfest,biggest,viva la vida,heaven,website,horizon13" />
+
+		<!-- GOOGLE FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:400,700,600,500,300,200,100,800,900' rel='stylesheet' type='text/css'> 
+		<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+
+		<!-- STYLESHEETS -->
+		<link href="assets/css/bootstrap.css" rel="stylesheet">
+		<link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/flexslider.css" rel="stylesheet" >
+		<link href="assets/css/animate.css" rel="stylesheet">
+		<link href="assets/css/schedule.css" rel="stylesheet">
+		<link href="assets/css/gridgallery.css" rel="stylesheet" type="text/css"  />
+		<link href="assets/css/venobox.css" rel="stylesheet" type="text/css"/>
+		<link href="assets/css/styles.css" rel="stylesheet"/>
+		<link href="assets/css/queries.css" rel="stylesheet"/>
+	  <link href="assets/css/bootstrap-datetimepicker.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="jquery.motionCaptcha.0.2.css?ez_orig=1"/>
+
+		
+    <!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <script type="text/javascript" language="javascript">
+        var total=0;
+        function name_validate()
+        {
+          if(document.getElementById('name').value.length==0)
+          {document.getElementById('err_name').innerHTML="";}
+          else if(!isNaN(document.getElementById('name').value))
+          {document.getElementById('err_name').innerHTML="!! NAME CANNOT BE NUMBERS !!";}
+          else
+          {document.getElementById('err_name').innerHTML="";}
+        }
+        function surname_validate()
+        {
+          if(document.getElementById('surname').value.length==0)
+            {document.getElementById('err_surname').innerHTML="";}
+          else if(!isNaN(document.getElementById('surname').value))
+          {document.getElementById('err_surname').innerHTML="!! SURNAME CANNOT BE NUMBERS !!";}
+          else
+          {document.getElementById('err_surname').innerHTML="";}
+        }
+        function contact_number_validate()
+        {
+          if(document.getElementById('contactnumber').value.length==0)
+            {document.getElementById('err_contactno').innerHTML="";}
+          else if(isNaN(document.getElementById('contactnumber').value))
+          {document.getElementById('err_contactno').innerHTML="!! ONLY NUMBERS ALLOWED !!";}
+          else if(document.getElementById('contactnumber').value.length!=10)
+          {document.getElementById('err_contactno').innerHTML="!! PHONE NUMBER SHOULD BE OF 10 DIGIT  !!";}
+          else
+          {document.getElementById('err_contactno').innerHTML="";}  
+        }
+        function gender_validate()
+        {
+          if(document.getElementById('gender').value.length==0)
+            {document.getElementById('err_gender').innerHTML="";}
+          else if(document.getElementById('gender').value == "default")
+          {document.getElementById('err_gender').innerHTML="!! PLEASE SELECT GENDER !!";}
+          else
+          {document.getElementById('err_gender').innerHTML="";}  
+        }
+        function date_validate()
+        {
+          if(document.getElementById('date').value.length==0)
+            {document.getElementById('err_date').innerHTML="";}
+          else if(document.getElementById('date').value == "default")
+          {document.getElementById('err_date').innerHTML="!! PLEASE SELECT DATE !!";}
+          else
+          {document.getElementById('err_date').innerHTML="";}  
+        }
+        function month_validate()
+        {
+          if(document.getElementById('month').value.length==0)
+            {document.getElementById('err_month').innerHTML="";}
+          else if(document.getElementById('month').value == "default")
+          {document.getElementById('err_month').innerHTML="!! PLEASE SELECT MONTH !!";}
+          else
+          {document.getElementById('err_month').innerHTML="";}  
+        }
+        function year_validate()
+        {
+          if(document.getElementById('year').value.length==0)
+            {document.getElementById('err_year').innerHTML="";}
+          else if(document.getElementById('year').value == "default")
+          {document.getElementById('err_year').innerHTML="!! PLEASE SELECT YEAR !!";}
+          else
+          {document.getElementById('err_year').innerHTML="";}  
+        }
+        function displaytotal()
+        {
+          var tot=0;
+          if ( document.getElementById('e1').checked == true ) {
+            tot=tot+100;
+          }
+          
+          if ( document.getElementById('e2').checked == true ) {
+            tot=tot+200;
+          }
+          
+          if ( document.getElementById('e3').checked == true ) {
+            tot=tot+1200;
+          }
+          if ( document.getElementById('e4').checked == true ) {
+            tot=tot+100;
+          }
+          
+          if ( document.getElementById('e5').checked == true ) {
+            tot=tot+200;
+          }
+          
+          if ( document.getElementById('e6').checked == true ) {
+            tot=tot+1000;
+          }
+          if ( document.getElementById('e7').checked == true ) {
+            tot=tot+100;
+          }
+          
+          if ( document.getElementById('e8').checked == true ) {
+            tot=tot+800;
+          }
+          
+          if ( document.getElementById('e9').checked == true ) {
+            tot=tot+800;
+          }
+          if ( document.getElementById('e10').checked == true ) {
+            tot=tot+300;
+          }
+          
+          if ( document.getElementById('e11').checked == true ) {
+            tot=tot+100;
+          }
+          
+          if ( document.getElementById('e12').checked == true ) {
+            tot=tot+100;
+          }
+          if ( document.getElementById('e13').checked == true ) {
+            tot=tot+100;
+          }
+          
+          if ( document.getElementById('e14').checked == true ) {
+            tot=tot+100;
+          }
+          if ( document.getElementById('e15').checked == true ) {
+            tot=tot+500;
+          }
+          
+          if ( document.getElementById('e16').checked == true ) {
+            tot=tot+50;
+          }
+          
+          if ( document.getElementById('e17').checked == true ) {
+            tot=tot+50;
+          }
+          if ( document.getElementById('e18').checked == true ) {
+            tot=tot+50;
+          }
+          
+          if ( document.getElementById('e19').checked == true ) {
+            tot=tot+50;
+          }
+          
+          if ( document.getElementById('e20').checked == true ) {
+            tot=tot+50;
+          }
+          if ( document.getElementById('e21').checked == true ) {
+            tot=tot+1000;
+          }
+          
+          if ( document.getElementById('e22').checked == true ) {
+            tot=tot+100;
+          }
+          
+          if ( document.getElementById('e23').checked == true ) {
+            tot=tot+500;
+          }
+          if ( document.getElementById('e24').checked == true ) {
+            tot=tot+100;
+          }
+          
+          if ( document.getElementById('e25').checked == true ) {
+            tot=tot+300;
+          }
+          
+          if ( document.getElementById('e26').checked == true ) {
+            tot=tot+500;
+          }
+          if ( document.getElementById('e27').checked == true ) {
+            tot=tot+50;
+          }
+          
+          if ( document.getElementById('e28').checked == true ) {
+            tot=tot+50;
+          }
+          
+          if ( document.getElementById('e29').checked == true ) {
+            tot=tot+50;
+          }
+          if ( document.getElementById('e30').checked == true ) {
+            tot=tot+50;
+          }
+          
+          if ( document.getElementById('e31').checked == true ) {
+            tot=tot+100;
+          }
+          
+          if ( document.getElementById('e32').checked == true ) {
+            tot=tot+200;
+          }
+          if ( document.getElementById('e33').checked == true ) {
+            tot=tot+150;
+          }
+          
+          if ( document.getElementById('e34').checked == true ) {
+            tot=tot+150;
+          }
+          
+          if ( document.getElementById('e35').checked == true ) {
+            tot=tot+150;
+          }
+          if ( document.getElementById('e36').checked == true ) {
+            tot=tot+150;
+          }
+          
+          if ( document.getElementById('e37').checked == true ) {
+            tot=tot+100;
+          }
+          
+          if ( document.getElementById('e38').checked == true ) {
+            tot=tot+100;
+          }
+          if ( document.getElementById('e39').checked == true ) {
+            tot=tot+200;
+          }
+          
+          if ( document.getElementById('e40').checked == true ) {
+            tot=tot+100;
+          }
+          
+          if ( document.getElementById('e41').checked == true ) {
+            tot=tot+100;
+          }
+          if ( document.getElementById('e42').checked == true ) {
+            tot=tot+100;
+          }
+          
+          if ( document.getElementById('e43').checked == true ) {
+            tot=tot+200;
+          }
+          
+          if ( document.getElementById('e44').checked == true ) {
+            tot=tot+200;
+          }
+          if ( document.getElementById('e45').checked == true ) {
+            tot=tot+200;
+          }
+          
+          if ( document.getElementById('e46').checked == true ) {
+            tot=tot+200;
+          }
+          
+          if ( document.getElementById('e47').checked == true ) {
+            tot=tot+200;
+          }          
+          if ( document.getElementById('e48').checked == true ) {
+            tot=tot+200;
+          }
+          
+          if ( document.getElementById('e49').checked == true ) {
+            tot=tot+400;
+          }
+          
+          if ( document.getElementById('e50').checked == true ) {
+            tot=tot+100;
+          }
+          if ( document.getElementById('e51').checked == true ) {
+            tot=tot+100;
+          }
+          
+          if ( document.getElementById('e52').checked == true ) {
+            tot=tot+100;
+          }
+          
+          if ( document.getElementById('e53').checked == true ) {
+            tot=tot+100;
+          }
+          if ( document.getElementById('e54').checked == true ) {
+            tot=tot+100;
+          }
+          if ( document.getElementById('e11').checked == true && document.getElementById('e12').checked == true) {
+            tot=tot-50;
+          }
+          if ( document.getElementById('e16').checked == true && document.getElementById('e17').checked == true && document.getElementById('e18').checked == true && document.getElementById('e19').checked == true && document.getElementById('e20').checked == true) {
+            tot=tot-50;
+          }
+          if ( document.getElementById('e27').checked == true && document.getElementById('e28').checked == true && document.getElementById('e29').checked == true && document.getElementById('e30').checked == true && document.getElementById('e31').checked == true) {
+            tot=tot-150;
+          }
+          if ( document.getElementById('e33').checked == true && document.getElementById('e34').checked == true && document.getElementById('e35').checked == true && document.getElementById('e36').checked == true) {
+            tot=tot-200;
+          }
+
+          total=tot; 
+          alert("Your Total will be : " +tot)
+          
+        }
+
+        function final_check()
+        {
+          if(document.getElementById('err_name').innerHTML!="")
+          { 
+            alert("OOPS! YOU DID NOT ENTER CORRECT NAME. PLEASE ENTER VALID DATA.");
+          return false;
+          }
+          else if(document.getElementById('err_surname').innerHTML!="")
+          {
+            alert("OOPS! YOU DID NOT ENTER SURNAME. PLEASE ENTER VALID DATA.");
+          return false;
+          
+          }
+          else if(document.getElementById('err_contactno').innerHTML!="")
+          {
+            alert("OOPS! YOU DID NOT ENTER CORRECT CONTACT NUMBER., PLEASE ENTER VALID DATA.");
+          return false;}
+          else if(document.getElementById('err_gender').innerHTML!="")
+          {
+            alert("OOPS! YOU DID NOT SELECT GENDER. PLEASE SELECT GENDER.");
+          return false;
+          
+          }
+          else if(document.getElementById('err_date').innerHTML!="")
+          {
+            alert("OOPS! YOU DID NOT SELECT DATE. PLEASE SELECT DATE.");
+          return false;}
+          else if(document.getElementById('err_month').innerHTML!="")
+          {
+            alert("OOPS! YOU DID NOT SELECT MONTH. PLEASE SELECT MONTH.");
+          return false;
+          
+          }
+          else if(document.getElementById('err_year').innerHTML!="")
+          {
+            alert("OOPS! YOU DID NOT SELECT YEAR. PLEASE SELECT YEAR.");
+          return false;}
+
+          return true;
+        }
+    </script>
+    <style>    
+	 /* MotionCAPTCHA canvas */
+    #mc-canvas {
+      margin:0 auto 20px;
+      padding:1px;
+      display: block;
+      border: 4px solid #433e45;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+    }
+    /* Red border when invalid */
+    #mc-canvas.mc-invalid {
+      border: 4px solid #aa4444;
+    }
+    /* Green border when valid */
+    #mc-canvas.mc-valid {
+      border: 4px solid #44aa44;
+    }
+    </style>
+
+	</head>
+	   
+    <body id="top">
+	  
+		<!--PRELOADER-->
+		<div class="preloader">
+		<div class="status"></div>
+		</div>
+		<!--/PRELOADER-->
+		
+		<!--HEADER-->
+	  	<div class="header header-hide scroll-header">
+			<div class="container">
+				<nav class="navbar navbar-default" role="navigation">
+				   <div class="navbar-header">
+					  <button type="button" class="navbar-toggle" data-toggle="collapse" 
+						 data-target="#example-navbar-collapse">
+						 <span class="sr-only">Toggle navigation</span>
+						 <span class="icon-bar"></span>
+						 <span class="icon-bar"></span>
+						 <span class="icon-bar"></span>
+					  </button>
+					   <!--<a class="navbar-brand" data-scroll href="#sec_1"><img src="assets/img/logo.png" alt="logo"/></a>-->
+				   </div>
+				   <div class="collapse navbar-collapse" id="example-navbar-collapse">
+					  <ul class="nav navbar-nav">
+						<li><a data-scroll href="index.html#intro">About</a></li>
+						<li><a data-scroll href="index.html#responsive">Events</a></li>
+						<li><a data-scroll href="index.html#team">Pronites</a></li>
+						<li><a data-scroll href="index.html#sponsers">Sponsors</a></li>
+						<li><a data-scroll href="index.html#contact">Contact</a></li>
+						<li><a data-scroll href="register.html">Register</a></li>
+					  </ul>
+				   </div>
+				</nav>
+			</div>
+		</div>
+		<!--/HEADER-->
+
+						
+					 
+		
+		<!-- ABOUT HORIZON -->	
+        <section class="intro text-center section-padding" id="intro">
+			<div class="container wow animated fadeInLeft animated" data-wow-duration="1s" data-wow-delay="0.5s">
+				<div class="row">
+					<div class="col-lg-8 align-center about">
+						<h1 class="arrow">Registration Form</h1>
+						<hr style="width:383px;">
+							<h2>Personal details</h2>
+    						<form method="post" id="mc-form" onsubmit="return final_check()" role="form" action="#">
+   								<input type="text" name="name" id="name" class="form-control name"  onBlur="name_validate()" placeholder="Name" required>
+                  <div class="container "style="height:5px;"></div>
+   								<div id="err_name" style="color:#F03"></div>
+								<input type="text" name="surname" id="surname" class="form-control name" onBlur="surname_validate()" placeholder="Surname" required>
+                <div class="container "style="height:5px;"></div>
+								<div id="err_surname" style="color:#F03"></div>
+								<input type="email" id="email" name="email" class="form-control" onBlur="" placeholder="Email ID" required>
+   								<div class="container "style="height:5px;"></div>
+                  <div id="err_email" style="color:#F03"></div>
+								<input type="text" id="collegename" name="collegename" onBlur="" class="form-control" placeholder="College name" required>
+   								<div class="container "style="height:5px;"></div>
+                  <div id="err_collegename" style="color:#F03"></div>
+								<input type="text" name="contactnumber" id="contactnumber" onBlur="contact_number_validate()" class="form-control" placeholder="Contact Number" required>
+                <div class="container "style="height:5px;"></div>
+   								<div id="err_contactno" style="color:#F03"></div>
+   								<select id="gender" placeholder="Gender" onBlur="gender_validate()" name="gender" class="form-control" required>
+										<option value="default" style="color:#fff">Gender</option>
+                    <option value="Male">Male</option>
+									  <option value="Female">Female</option>
+								</select>
+   								<div id="err_gender" style="color:#F03"></div>
+                  <div class="row" style="padding-top:5px;">
+								<div class="col-md-4">
+                <select id="date" onBlur="date_validate()" name="date" class="form-control" required>
+                    <option value="default" style="color:#fff">Date</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <select id="month" onBlur="month_validate()" name="month" class="form-control" required>
+                    <option value="default" style="color:#fff">month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+              </div>
+              <div class="col-md-4">
+                <select id="year" onBlur="year_validate()" name="year" class="form-control" required>
+                    <option value="default" style="color:#fff">year</option>
+                    <option value="1989">1989</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                    <option value="1992">1992</option>
+                    <option value="1993">1993</option>
+                    <option value="1994">1994</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                </select>
+                </div>
+                </div>
+								<div id="err_date" style="color:#F03"></div>
+                <div id="err_month" style="color:#F03"></div>
+                <div id="err_year" style="color:#F03"></div>
+								<div class="col-md-12 col-xs-12" style="height:40px;"></div>
+								<div class="row">
+								<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+									<p style="font-size:20px;font-weight:600;color:FDB436">A. Dance</p>
+									<div class="checkbox" style="color:FDB436">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Just Dance," id="e1">Just Dance {<i class="fa fa-inr"></i>100 P/H}</label>
+
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Two to Tango," id="e2">Two to Tango {<i class="fa fa-inr"></i>200 P/T} {Team of 2}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Rhythm," id="e3">Rhythm {<i class="fa fa-inr"></i>1200 P/T} {Team of 6-12}</label>
+    								</div>
+  								</div>
+  								<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+  									<p style="font-size:20px;font-weight:600;color:FDB436">B. Music</p>
+									<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Raaga," id="e4">Raaga {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Lets duet," id="e5">Lets duet {<i class="fa fa-inr"></i>200 P/T} {Team of 2}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Head Banger's Ball," id="e6">Head Banger's Ball {<i class="fa fa-inr"></i>1000 P/T} {Team of 6-10}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Soul Tuned," id="e7">Soul Tuned {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+  								</div>
+  							</div>
+  							<div class="row">
+  								<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+  									<p style="font-size:20px;font-weight:600;color:FDB436">C. Film Fiesta</p>
+									<div class="checkbox" style="color:FDB436">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Do Gooders Video," id="e8">Do Gooders Video{<i class="fa fa-inr"></i>800 P/T} {Team of 6-10}</label>
+    								</div>
+    							</div>
+  								<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+									<p style="font-size:20px;font-weight:600;color:FDB436">D. Dramatics</p>
+									<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Tamaasha," id="e9">Tamaasha {<i class="fa fa-inr"></i>800 P/T} {Team of 6-10}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Ad- Mad," id="e10">Ad- Mad {<i class="fa fa-inr"></i>300 P/T} {Team of 2-3}</label>
+    								</div>
+    							</div>
+    						</div>
+    						<div class="row">
+    							<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+									<p style="font-size:20px;font-weight:600;color:FDB436">E. Photography (<i class="fa fa-inr"></i>150 for Both)</p>
+									<div class="checkbox" style="color:FDB436">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="World Through a Lens," id="e11">World Through a Lens {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Horizon Photography," id="e12">Horizon Photography {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+    							</div>
+  								<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+  									<p style="font-size:20px;font-weight:600;color:FDB436">F. Lan Gaming</p>
+									<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="FIFA-11," id="e13">FIFA-11 {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="NFS Most Wanted," id="e14">NFS Most Wanted {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="CS," id="e15">CS {<i class="fa fa-inr"></i>500 P/T} {Max 5 per Team}</label>
+    								</div>
+  								</div>
+  							</div>
+  								<div class="row">
+  								<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+									<p style="font-size:20px;font-weight:600;color:FDB436">G. Literary (<i class="fa fa-inr"></i>200 for All)</p>
+									<div class="checkbox" style="color:FDB436">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Battala Verbale," id="e16">Battala Verbale {<i class="fa fa-inr"></i>50 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Penthalon," id="e17">Penthalon {<i class="fa fa-inr"></i>50 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Hit the Good Books," id="e18">Hit the Good Books {<i class="fa fa-inr"></i>50 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="JAM," id="e19">JAM {<i class="fa fa-inr"></i>50 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Wordemort," id="e20">Wordemort {<i class="fa fa-inr"></i>50 P/H}</label>
+    								</div>
+  								</div>
+  								<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+  									<p style="font-size:20px;font-weight:600;color:FDB436">H. Sports</p>
+									<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Rotract Cup," id="e21">Rotract Cup {<i class="fa fa-inr"></i>1000 P/T} {11+3}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Bughouse Chess," id="e22">Bughouse Chess {<i class="fa fa-inr"></i>100 P/T} {Team of 2}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Voleyball," id="e23">Voleyball {<i class="fa fa-inr"></i>500 P/T} {6+3}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Table Tennis," id="e24">Table Tennis {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Slam Dunk," id="e25">Slam Dunk {<i class="fa fa-inr"></i>300 P/T} {3+2}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Gully Cricket," id="e26">Gully Cricket {<i class="fa fa-inr"></i>500 P/T} {5+2}</label>
+    								</div>
+  								</div>
+  							</div>
+  							<div class="row">
+  								<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+									<p style="font-size:20px;font-weight:600;color:FDB436">I. Fine Arts (<i class="fa fa-inr"></i>150 for All)</p>
+									<div class="checkbox" style="color:FDB436">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Poster making," id="e27">Poster making {<i class="fa fa-inr"></i>50 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Cone Art," id="e28">Cone Art {<i class="fa fa-inr"></i>50 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Nail Art," id="e29">Nail Art {<i class="fa fa-inr"></i>50 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Dooodle-Woodle," id="e30">Dooodle-Woodle {<i class="fa fa-inr"></i>50 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Rangoli," id="e31">Rangoli {<i class="fa fa-inr"></i>100 P/T} {team 1-3}</label>
+    								</div>
+  								</div>
+  								<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+  									<p style="font-size:20px;font-weight:600;color:FDB436">J. Ramp Burn</p>
+									<div class="checkbox" style="color:FDB436">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Fashion show," id="e32">Fashion show {<i class="fa fa-inr"></i>200 P/H}</label>
+    								</div>
+    							</div>
+    							</div>
+    							<div class="row">
+    							<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+  									<p style="font-size:20px;font-weight:600;color:FDB436">K. Quizzing (<i class="fa fa-inr"></i>400 for all) (Team of 2-3)</p>
+									<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="General," id="e33">General {<i class="fa fa-inr"></i>150 P/T}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Sports," id="e34">Sports {<i class="fa fa-inr"></i>150 P/T}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="MELA," id="e35">MELA {<i class="fa fa-inr"></i>150 P/T}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Vices," id="e36">Vices {<i class="fa fa-inr"></i>150 P/T}</label>
+    								</div>
+  								</div>
+  								<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+  									<p style="font-size:20px;font-weight:600;color:FDB436">L. Best of Horizon</p>
+									<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Mr. and Ms. Horizon," id="e37">Mr. and Ms. Horizon {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Hogathon," id="e38">Hogathon {<i class="fa fa-inr"></i>100 P/H} {Team of 2}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Charades Zone," id="e39">Charades Zone {<i class="fa fa-inr"></i>200 P/T} {Team of 2-3}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Beg Borrow Steal," id="e40">Beg Borrow Steal {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Paintball," id="e41">Paintball {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Amazing Race," id="e42">Amazing Race {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+  								</div>
+  							</div>
+  							<div class="row">
+  								<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+  									<p style="font-size:20px;font-weight:600;color:FDB436">M. Pirates</p>
+									<div class="checkbox" style="color:FDB436">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Pirates," id="e43">Pirates {<i class="fa fa-inr"></i>200 P/T} (Team of 2)</label>
+    								</div>
+    							</div>
+    							<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+  									<p style="font-size:20px;font-weight:600;color:FDB436">N. Live that Extra Heartbeat!</p>
+									<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Why so Nolan," id="e44">Why so Nolan {<i class="fa fa-inr"></i>200 P/T} {Team of 2-3}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Splatoons," id="e45">Splatoons {<i class="fa fa-inr"></i>200 P/T} {Team of 2-3}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Battle-A-Board," id="e46">Battle-A-Board {<i class="fa fa-inr"></i>200 P/T} {Team of 2-3}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Evil Reincarnated," id="e47">Evil Reincarnated {<i class="fa fa-inr"></i>200 P/T} {Team of 2-3}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Funtakshri," id="e48">Funtakshri {<i class="fa fa-inr"></i>200 P/T} {Team of 2-3}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Brethren-Moot Court," id="e49">Brethren-Moot Court {<i class="fa fa-inr"></i>400 P/T} {Team of 4}</label>
+    								</div>
+  								</div>
+  							</div>
+  							<div class="row">
+  								<div class="col-md-6 col-xs-12" align="left" style="text-align:left">
+									<p style="font-size:20px;font-weight:600;color:FDB436">O. Workshops</p>
+									<div class="checkbox" style="color:FDB436">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Dance (Wave Academy)," id="e50">Dance (Wave Academy) {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Photoshop," id="e51">Photoshop {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Personal Development," id="e52">Personal Development {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Calligraphy," id="e53">Calligraphy {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+    								<div class="checkbox">
+      									<label style="color:FDB436"><input type="checkbox" name="e[]" value="Fashion." id="e54">Fashion {<i class="fa fa-inr"></i>100 P/H}</label>
+    								</div>
+  								</div>
+  							</div>
+  							
+
+                <div class="col-md-12 col-xs-12" style="height:30px;"></div>                
+                <div id="mc">
+                    <p style="font-size:17px;color:#fdb437">Plz draw the shape  to submit the form: (<a onclick="window.location.reload()" href="#" title="Click for a new shape" style="color:#0000ff">new shape</a>)</p>
+                    <canvas id="mc-canvas">
+                    Your browser doesn't support the canvas element - please visit in a modern browser.
+                    </canvas>
+                    <input type="hidden" id="mc-action" value="insert.php"/>
+                </div>
+                
+                
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>
+                <script src="jquery.motionCaptcha.0.2.js" ></script>
+                <script type="text/javascript">
+                jQuery(document).ready(function($) {
+                // Do the biznizz:
+                $('#mc-form').motionCaptcha({
+                    shapes: ['triangle', 'x', 'rectangle', 'circle', 'check', 'zigzag', 'arrow', 'delete', 'pigtail', 'star']
+                });
+
+              });
+              </script>
+
+
+  								<div class="col-md-12 col-xs-12" style="height:40px;"></div>
+
+                  <input type="" value="Check Total" disable="disable" class="btn btn-primary" onClick="displaytotal()">
+  								<input type="submit" disabled="disabled" value="Register !!" class="btn btn-primary" name="register" id="register">
+   								<div class="clearfix"></div>
+   							</form>
+						
+					</div>
+				</div>
+			</div>
+        </section>
+		<!--/ABOUT-->
+        	<!-- HUBILO -->	
+        
+			<div class="container-fluid" style="background:#34d3a4;width:100%">
+			<div class="col-md-4 col-sm-4 col-xs-12 align-center" style="padding:18px"><a href="http://www.hubilo.com" target="_blank"><img src="assets/img/hubilo.png" alt="best way to attend events"></img></a></div>
+			<div class="row">
+				<div class="col-md-4 col-sm-4 col-xs-12" align="center" style="padding:27px;bottom:5px;"><a href="https://play.google.com/store/apps/details?id=com.hubilo.social&hl=en" class="social-btn" target="_blank"><i class="fa fa-android"></i></a></div>
+				
+				<div class="col-md-4 col-sm-4 col-xs-12" align="center" style="padding:18px"><p class="align-center" style="font-size:28px;weight:600;">Download The App<br /><p></div>
+
+				<div class="col-md-4 col-sm-4 col-xs-12" align="center" style="padding:27px;bottom:5px;"><a href="#" class="social-btn" target="_blank"><i class="fa fa-apple"></i></a></div>
+				
+			</div>
+			<p class="align-center" style="font-size:20px;weight:600;">To stay updated and connected at HORIZON '15.<br /><br /><p>
+			</div>
+        
+		<!--HUBILO-->
+
+		<!--FOOTER-->	
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 align-center">
+						<ul class="legals">
+							<li><button class="md-trigger " data-modal="modal-11">Help</button></li>
+							<li><a href="http://rcni.in/">Copyrights, RCNI</a></li>
+						</ul>
+					</div>
+					<div class="md-modal md-effect-9" id="modal-11">
+						<div class="md-content padding-none">
+							<div class="folio">
+								<div class="sp-name disclaimer"><strong>Help</strong></div>
+								<div class="sp-dsc disclaim-border">
+									<ul style="font-size:11px">
+										<li>Event Details:</li> 09157278941/42
+										<li>Registration Receipt queries:</li> 09157278943
+										<li>Accomodation:</li>09157278944
+									</ul>
+								</div>
+								<button class="md-close"><i class="fa fa-times"></i></button>
+							</div>
+						</div>
+					</div> 
+					<div class="md-overlay"></div>
+				</div>
+			</div>
+        </footer>
+		<!-- /FOOTER -->
+		<!--SCRIPTS-->	
+		
+		<script type="text/javascript" src="assets/js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery-ui-1.10.4.min.js"></script>
+		
+		<!--VIMEO VIDEO-->     
+        <script type="text/javascript" src="assets/js/venobox.js"></script>
+
+        <!--3D GALLERY-->
+        <script type="text/javascript" src="assets/js/classie.grid.gallery.js"></script>
+		<script type="text/javascript" src="assets/js/modernizr.gridgallery.js"></script>		
+		<script type="text/javascript" src="assets/js/cbpGridGallery.js"></script>
+ 
+		<script type="text/javascript" src="assets/js/classie.js" ></script>
+		<script type="text/javascript" src="assets/js/modalEffects.js" ></script>
+       
+	    <script type="text/javascript" src="assets/js/nlform.js" ></script>
+      <script type="text/javascript" src="assets/js/bootstrap-datetimepicker.min.js" ></script>
+		<script>var nlform = new NLForm( document.getElementById( 'nl-form' ) );</script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js" ></script>
+        
+		<!-- TEAM SLIDER  -->
+		<script type="text/javascript" src="assets/js/jquery.flexslider.js" ></script>
+		
+		<!-- SCHEDULE TABS  -->
+        <script type="text/javascript" src="assets/js/modernizr.js" ></script>
+		<script type="text/javascript" src="assets/js/cbpFWTabs.js" ></script>		
+		
+		<!--SPONSOR SLIDER-->
+		<script type="text/javascript" src="assets/js/jssor.core.js"></script>
+		<script type="text/javascript" src="assets/js/jssor.utils.js"></script>
+		<script type="text/javascript" src="assets/js/jssor.slider.js"></script>
+		<script type="text/javascript" src="assets/js/sponsor_init.js"></script>
+		
+		<!-- SMOOTH SCROLL  -->
+		<script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+		
+		<!-- NICE SCROLL  -->
+		<script type="text/javascript" src="assets/js/jquery.nicescroll.js"></script>
+		
+		<!-- SUBSCRIPTION FORM  -->
+		<script type="text/javascript" src="assets/js/notifyMe.js"></script>
+		
+		<script type="text/javascript" src="assets/js/jquery.placeholder.js"></script>
+		
+		<!-- ANIMATION  -->
+		<script type="text/javascript" src="assets/js/wow.min.js"></script>
+		
+		<!-- INITIALIZATION  -->
+		<script type="text/javascript" src="assets/js/init.js"></script>
+
+    </body>
+</html>
